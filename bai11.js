@@ -8,23 +8,26 @@
  * - getArea: trả về diện tích
  */
 var rectangle = {
-    width : 3,
-    height : 4
-  }
-  function getWidth(a){
+    width: 3,
+    height: 4
+}
+function getWidth(a) {
     var width = a.width;
     return width;
-  }
-  console.log(getWidth(rectangle));
-  
-  function getHeight(a){
+}
+var width = getWidth(rectangle);
+console.log('width = ' + width);
+
+function getHeight(a) {
     var height = a.height;
     return height;
-  }
-  console.log(getHeight(rectangle));
-  
-  function getArea(a,b){
-    var s = a*b;
+}
+var height = getHeight(rectangle);
+console.log('height = ' + height);
+
+function getArea(a, b) {
+    var s = a * b;
     return s;
-  }
-  console.log(getArea(getWidth(rectangle), getHeight(rectangle)));
+}
+var area = getArea(width, height);
+console.log('area = ' + area);
